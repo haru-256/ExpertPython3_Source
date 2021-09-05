@@ -3,17 +3,17 @@ from contextlib import contextmanager
 
 @contextmanager
 def context_illustration():
-    print('コンテキストに入った')
+    print("コンテキストに入った")
     try:
         yield
     except Exception as e:
-        print('コンテキストから出た')
-        print(f'エラーあり ({e})')
+        print("コンテキストから出た")
+        print(f"エラーあり ({e})")
         # 例外を送出し直す必要がある
         raise
     else:
-        print('コンテキストから出た')
-        print('エラーなし')
+        print("コンテキストから出た")
+        print("エラーなし")
 
 
 if __name__ == "__main__":
